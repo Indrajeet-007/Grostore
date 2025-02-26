@@ -1,143 +1,142 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin: 1.5rem;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 1.5rem;
+  gap: 1rem;
 }
 
 ul {
-    display: flex;
-    flex-direction: column;
-    flex: 3 0;
-    justify-content: space-evenly;
-    border: 2px solid #bbc6ff;
-    border-radius: 1rem;
-    list-style-type: none;
-    margin: .5rem;
-    padding: 0;
-    background: #f8faff;
-    box-shadow: 0 4px 10px rgba(187, 196, 255, 0.2);
-    transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  flex: 3 0;
+  justify-content: space-evenly;
+  border: 2px solid #bbc6ff;
+  border-radius: 1rem;
+  list-style-type: none;
+  margin: 0.5rem;
+  padding: 0;
+  background: #f8faff;
+  box-shadow: 0 4px 10px rgba(187, 196, 255, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 
 ul:hover {
-    box-shadow: 0 6px 15px rgba(150, 136, 255, 0.3);
-    
+  box-shadow: 0 6px 15px rgba(150, 136, 255, 0.3);
 }
 
 ul li {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    border-bottom: 1px solid #66baff;
-    padding: 1rem;
-    transition: background 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #66baff;
+  padding: 1rem;
+  transition: background 0.3s ease-in-out;
 }
 
 ul li:hover {
-    background: #e6ffff;
-    border-radius: 20px;
+  background: #e6ffff;
+  border-radius: 20px;
 }
 
 ul li:last-child {
-    border: none;
+  border: none;
 }
 
 ul li img {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 100rem;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100rem;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 ul li img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(137, 87, 255, 0.3);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(137, 87, 255, 0.3);
 }
 
 ul li div {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 ul li div:not(:first-child) {
-    flex-basis: 18%;
+  flex-basis: 18%;
 }
 
 ul li select {
-    width: 3rem;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid lightgrey;
-    font-size: 1.1rem;
-    font-weight: 100;
-    transition: border-color 0.3s ease-in-out;
+  width: 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid lightgrey;
+  font-size: 1.1rem;
+  font-weight: 100;
+  transition: border-color 0.3s ease-in-out;
 }
 
 ul li select:focus {
-    border-color: #66baff;
+  border-color: #66baff;
 }
 
 ul .remove-button {
-    border-radius: 1rem;
-    border: none;
-    padding: .5rem 1rem;
-    color: #7229e7;
-    opacity: .7;
-    outline: none;
-    font-weight: bold;
-    background: transparent;
-    transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #7229e7;
+  opacity: 0.7;
+  outline: none;
+  font-weight: bold;
+  background: transparent;
+  transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
 ul .remove-button:hover {
-    opacity: 1;
-    cursor: pointer;
-    background: #bbc9ff;
+  opacity: 1;
+  cursor: pointer;
+  background: #bbc9ff;
 }
 
 .checkout {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1 3;
-    height: 20rem;
-    border: 2px solid #bbbdff;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: .5rem;
-    background: #fff8f8;
-    box-shadow: 0 4px 10px rgba(187, 190, 255, 0.2);
-    transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 3;
+  height: 20rem;
+  border: 2px solid #bbbdff;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  background: #fff8f8;
+  box-shadow: 0 4px 10px rgba(187, 190, 255, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 
 .checkout:hover {
-    box-shadow: 0 6px 15px rgba(142, 136, 255, 0.3);
+  box-shadow: 0 6px 15px rgba(142, 136, 255, 0.3);
 }
 
-.checkout>div {
-    font-size: 1.4rem;
-    margin: 1rem;
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.checkout > div {
+  font-size: 1.4rem;
+  margin: 1rem;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .checkout .foods-count {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .checkout .foods-count::before {
-    content: 'Count: ';
-    color: grey;
+  content: "Count: ";
+  color: grey;
 }
 
 .checkout .total-price::before {
-    content: 'Price: ';
-    color: grey;
+  content: "Price: ";
+  color: grey;
 }
