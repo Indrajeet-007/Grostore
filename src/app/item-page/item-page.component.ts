@@ -6,8 +6,8 @@ import { Item } from '../shared/models/Item';
 
 @Component({
   selector: 'app-items-page',
-  templateUrl: './food-page.component.html',
-  styleUrls: ['./food-page.component.css'],standalone:false
+  templateUrl: './item-page.component.html',
+  styleUrls: ['./item-page.component.css'],standalone:false
 })
 export class FoodPageComponent implements OnInit {
 
