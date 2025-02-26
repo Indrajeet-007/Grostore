@@ -16,11 +16,6 @@ resetLinkText="Back To Homepage"></app-not-found>
         <div class="rating">
         </div>
 
-        <div class="origins">
-            <span *ngFor="let origin of items.origins">
-                {{origin}}
-            </span>
-        </div>
 
         <div class="tags">
             <app-tags [homepageTags]="items.tags" justifyContent="start"></app-tags>
@@ -28,7 +23,7 @@ resetLinkText="Back To Homepage"></app-not-found>
 
         <div class="cook-time">
             <span>
-                Time to cook about <strong>{{items.deliveryTime}}</strong> minutes
+                 Delivery Time about&nbsp;<b class="bolddelivery">{{items.deliveryTime}}</b>
             </span>
         </div>
 

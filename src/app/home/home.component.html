@@ -1,5 +1,5 @@
 <app-search></app-search>
-<app-tags></app-tags>
+
 <app-not-found [visible]="!item || item.length <= 0" resetLinkText="Reset Search"></app-not-found>
 <ul>
     <li *ngFor="let item of item">
@@ -35,3 +35,4 @@
         </a>
     </li>
 </ul>
+<app-tags></app-tags>

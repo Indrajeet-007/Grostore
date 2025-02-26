@@ -23,7 +23,7 @@ img {
   flex: 1 0;
   object-fit: cover;
   height: 35rem;
-  margin: 1rem;
+  
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -110,10 +110,13 @@ img:hover {
 }
 
 .details .cook-time span {
-  padding: 0.6rem 2rem 0.6rem 0;
+  padding: 0.6rem 2rem 0.6rem 2rem;
   border-radius: 10rem;
   font-size: 1.3rem;
   background: #f0f5ff;
+  align-items: center;
+  justify-content:flex-start;
+  display: flex;
 }
 
 /* Price */
