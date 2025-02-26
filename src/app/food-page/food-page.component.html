@@ -1,0 +1,42 @@
+<app-not-found [visible]="!items" notFoundMessage="Product Not Found!"
+resetLinkText="Back To Homepage"></app-not-found>
+
+<div *ngIf="items" class="container">
+    <img [src]="items.imageUrl" [alt]="items.name" />
+
+    <div class="details">
+        <div class="header">
+            <span class="name">
+                {{items.name}}
+            </span>
+            <span class="favorite {{items.favorite?'':'not'}}">
+                ❤
+            </span>
+        </div>
+        <div class="rating">
+        </div>
+
+        <div class="origins">
+            <span *ngFor="let origin of items.origins">
+                {{origin}}
+            </span>
+        </div>
+
+        <div class="tags">
+            <app-tags [homepageTags]="items.tags" justifyContent="start"></app-tags>
+        </div>
+
+        <div class="cook-time">
+            <span>
+                Time to cook about <strong>{{items.deliveryTime}}</strong> minutes
+            </span>
+        </div>
+
+        <div class="price">
+            <span>{{items.price|currency}}</span>
+        </div>
+
+        <button (click)="addToCart()">Add To Cart</button>
+    </div>
+
+</div>

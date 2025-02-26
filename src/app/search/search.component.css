@@ -1,0 +1,41 @@
+div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+    background: white;
+    padding: 8px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background: #f3f3f3;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #999;
+  }
+  
+  button {
+    background: #5f87ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #2a19e6;
+  }
+  

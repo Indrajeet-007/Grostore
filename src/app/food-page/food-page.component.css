@@ -1,0 +1,168 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+    gap: 2rem;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container > * {
+    min-width: 25rem;
+    max-width: 40rem;
+}
+
+/* Image Styling */
+img {
+    border-radius: 2rem;
+    flex: 1 0;
+    object-fit: cover;
+    height: 35rem;
+    margin: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Details Section */
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    border-radius: 2rem;
+    padding: 2rem;
+    background: white;
+    color: black;
+    margin-left: 1rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Card Hover Effect */
+.details:hover {
+    transform: translateY(-5px);
+}
+
+/* Header Styling */
+.details .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Name */
+.details .name {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Favorite Icon */
+.details .favorite {
+    color: #e72929;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Favorite Hover Effect */
+.details .favorite:hover {
+    transform: scale(1.2);
+}
+
+.details .favorite.not {
+    color: gray;
+}
+
+/* Origins */
+.details .origins {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.details .origins > span {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    border-radius: 2rem;
+    background-color: #dfe6e9;
+    color: #2d3436;
+    font-weight: bold;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Cook Time */
+.details .cook-time {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.details .cook-time span {
+    padding: 0.6rem 2rem 0.6rem 0;
+    border-radius: 10rem;
+    font-size: 1.3rem;
+    background: #f8f9fa;
+}
+
+/* Price */
+.details .price {
+    font-size: 1.8rem;
+    margin: 2rem 2rem 2rem 0;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.details .price::before {
+    content: "Price: ";
+    color: darkgrey;
+    font-weight: normal;
+}
+
+/* Button Styling */
+.details button {
+    color: white;
+    background: linear-gradient(135deg, #2962e7, #47b5ff);
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    outline: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.details button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    img {
+        height: 30rem;
+    }
+}
